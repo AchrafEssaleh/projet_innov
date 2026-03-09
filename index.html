@@ -1,142 +1,177 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Détection Soft – IA d’aide au dialogue parents/ados</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+<title>Détection Soft – Test d'innovation</title>
 
-        h1 {
-            font-size: 2.2em;
-            margin: 0;
-        }
+<style>
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+text-align:center;
+}
 
-        .poster {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-            margin-bottom: 25px;
-        }
+header{
+padding:60px 20px;
+}
 
-        .button-container {
-            text-align: center;
-            margin-top: 30px;
-        }
+h1{
+font-size:2.4em;
+max-width:800px;
+margin:auto;
+}
 
-        button {
-            background-color: #4A6CFF;
-            color: white;
-            padding: 16px 28px;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
+.subtitle{
+margin-top:20px;
+font-size:1.2em;
+color:#cbd5e1;
+}
 
-        button:hover {
-            background-color: #2f4fd1;
-        }
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
 
-        /* Popup porte factice */
-        #popup {
-            display: none;
-            position: fixed;
-            top: 0; 
-            left: 0;
-            width: 100%; 
-            height: 100%;
-            background: rgba(0,0,0,0.6);
-            justify-content: center;
-            align-items: center;
-        }
+.poster{
+width:100%;
+border-radius:12px;
+margin-top:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
 
-        #popup-content {
-            background: white;
-            padding: 30px;
-            max-width: 400px;
-            width: 90%;
-            border-radius: 12px;
-            text-align: center;
-        }
+.section{
+margin-top:60px;
+}
 
-        input {
-            width: 90%;
-            padding: 12px;
-            margin-top: 15px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            font-size: 1em;
-        }
+.steps{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:30px;
+}
 
-        .close-btn {
-            margin-top: 15px;
-            background: #888;
-        }
-    </style>
+.step{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+width:220px;
+}
+
+.form-container{
+margin-top:40px;
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+}
+
+iframe{
+width:100%;
+height:900px;
+border:none;
+border-radius:10px;
+}
+
+.footer{
+margin-top:60px;
+font-size:0.9em;
+color:#94a3b8;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Une IA pour aider parents et adolescents à renouer le dialogue</h1>
-    <p>Landing page prototype</p>
+
+<h1>
+Et si votre téléphone révélait votre état mental ?
+</h1>
+
+<p class="subtitle">
+Projet étudiant – Détection précoce du mal-être chez les adolescents
+</p>
+
 </header>
+
 
 <div class="container">
 
-    <!-- IMAGE 1 -->
-    <img src="image1.jpg" alt="Illustration 1" class="poster">
+<img src="image1.jpg" class="poster">
 
-    <!-- IMAGE 2 -->
-    <img src="image2.jpg" alt="Illustration 2" class="poster">
 
-    <div class="button-container">
-        <button onclick="ouvrirPopup()">Je souhaite tester la version bêta gratuitement</button>
-    </div>
+<div class="section">
+
+<h2>Comment fonctionne l'idée ?</h2>
+
+<div class="steps">
+
+<div class="step">
+📱 <br><br>
+Analyse des habitudes numériques  
+<br><br>
+temps d’écran, sommeil, réseaux sociaux
 </div>
 
-<!-- POPUP PORTE FACTICE -->
-<div id="popup">
-    <div id="popup-content">
-        <h2>Merci ! 🙌</h2>
-        <p>
-            Nous finalisons les derniers réglages de l'IA pour garantir la confidentialité des données.<br><br>
-            Laissez votre email pour être prévenu du lancement.
-        </p>
-
-        <input type="email" placeholder="Votre email">
-
-        <button class="close-btn" onclick="fermerPopup()">Fermer</button>
-    </div>
+<div class="step">
+🧠 <br><br>
+Détection de signaux faibles  
+<br><br>
+stress, fatigue, isolement
 </div>
 
-<script>
-    function ouvrirPopup() {
-        document.getElementById("popup").style.display = "flex";
-    }
-    function fermerPopup() {
-        document.getElementById("popup").style.display = "none";
-    }
-</script>
+<div class="step">
+💬 <br><br>
+Aide au dialogue  
+<br><br>
+entre parents et adolescents
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Participez à l'expérience</h2>
+
+<p>
+Répondez au questionnaire ci-dessous (30 secondes)
+</p>
+
+<div class="form-container">
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdInCFeZrRMOdabqSxCCkcKN5TgZPjA-4NixOJePO0cqnbIvA/viewform?embedded=true">
+Chargement…
+</iframe>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+🔒 Aucun message n'est lu  
+<br>
+🔒 Données anonymes  
+<br><br>
+
+Projet étudiant – expérimentation utilisateur
+
+</div>
+
+</div>
 
 </body>
+
 </html>
